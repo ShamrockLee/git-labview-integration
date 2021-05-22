@@ -20,7 +20,7 @@ To get start on Windows, work on Git BASH:
         | `LVCOMPARE_EXECUTABLE` | Path to the LvCompare executable |
         | `LVMERGE_EXECUTABLE` | Path to the LvMerge executable |
         | `CONFIG_DIRECTORY_LEVEL` | Level of directory from the project root to this configuration file.<br />0 if placed at the project root.|
-        | `PROJECT_ROOT_FORCED` | (Optional) Path to the project root<br/>If set to non-empty string, it overrides the auto-detection result from `CONFIGURATION_DIRECTORY_LEVEL` and the configuration source path |
+        | `PROJECT_ROOT_FORCED` | (Optional) Path to the project root<br/>If set to non-empty string, it overrides the auto-detection result from `CONFIGURATION_DIRECTORY_LEVEL` and the configuration source path<br />This option is needed only when the absolute path of the project root cannot be correctly determined.<br />For example, when working on a project in the shared folder of Windows-in-VirtualBox, git sometimes interprete the path as `//VBoxSvr` and cause the script to err, making manual specification nessisary. |
 
 *   Inside the project, do
     ```console
