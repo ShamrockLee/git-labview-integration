@@ -8,10 +8,11 @@ It can serve as a template of a LabVIEW project using Git as its version control
 
 To get start on Windows, work on Git BASH:
 
-*   Copy `git-labview-integration-posix/labview_path_windows.config.default` to your Project and rename to `labview_path_windows.config`.
+*   Copy `git-labview-integration-posix/labview_path_windows.config.default` to your project and rename to `labview_path_windows.config`.
 
     *   The name is arbitrary, and the path to the configuration will be used later.
     *   It is preferred to place it at the project root, but it's okay not to.
+    *   `PROJECT_ROOT_FORCED` needs to be set if the config file isn't placed inside the project.
 
 *   Edit the configuration
     *   <table>
@@ -27,7 +28,8 @@ To get start on Windows, work on Git BASH:
         <tr><td><code>PROJECT_ROOT_FORCED</code></td><td>(Optional) Path to the project root<br/>
                                                          If set to non-empty string, it overrides the auto-detection result
                                                          from <code>CONFIGURATION_DIRECTORY_LEVEL</code> and the configuration source path<br />
-                                                         This option is needed only when
+                                                         This option is needed only when the configuration file
+                                                         cannot be placed inside the project folder, or
                                                          the absolute path of the project root cannot be correctly determined.<br />
                                                          For example, when working on a project in the shared folder of Windows-in-VirtualBox,
                                                          Git sometimes interprete the path as `//VBoxSvr` and cause the script to err,
