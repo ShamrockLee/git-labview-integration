@@ -1,0 +1,23 @@
+## LabVIEW executable absolute path
+## or a way to call it
+## This can be hard-coded
+## as well as programmatically defined
+LABVIEW_EXECUTABLE="$(command -v LabVIEW)"
+
+## LvCompare executable absolute path
+LVCOMPARE_EXECUTABLE="$(command -v LVCompare)"
+
+## LvMerge executable absolute path
+LVMERGE_EXECUTABLE="$(command -v LVMerge)"
+
+## The location of this script. DO NOT EDIT.
+CONFIGURATION_SOURCE="$BASH_SOURCE"
+
+## The directory level from the project root to this configuration
+## Default to 0 since this configuration is usually placed at the source root
+CONFIGURATION_DIRECTORY_LEVEL=0
+
+## Project root (optional)
+## Override the auto-detection result and the CONFIGURATION_DIRECTORY_LEVEL setting
+# PROJECT_ROOT_FORCED="$HOME/Projects/my-project"
+

@@ -1,0 +1,20 @@
+## LabVIEW executable absolute path
+LABVIEW_EXECUTABLE='C:\Program Files (x86)\National Instruments\LabVIEW 2020\LabVIEW.exe'
+
+## LvCompare executable absolute path
+LVCOMPARE_EXECUTABLE='C:\Program Files (x86)\National Instruments\Shared\LabVIEW Compare\LVCompare.exe'
+
+## LvMerge executable absolute path
+LVMERGE_EXECUTABLE='C:\Program Files (x86)\National Instruments\Shared\LabVIEW Merge\LVMerge.exe'
+
+## The location of this script. DO NOT EDIT.
+CONFIGURATION_SOURCE="$BASH_SOURCE"
+
+## The directory level from the project root to this configuration
+## Default to 0 since this configuration is usually placed at the source root
+CONFIGURATION_DIRECTORY_LEVEL=0
+
+## Project root (optional)
+## Override the auto-detection result and the CONFIGURATION_DIRECTORY_LEVEL setting
+# PROJECT_ROOT_FORCED='C:\Documents\labview-temperature-measurement-and-transmission'
+
