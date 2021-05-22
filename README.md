@@ -14,13 +14,25 @@ To get start on Windows, work on Git BASH:
     *   It is preferred to place it at the project root, but it's okay not to.
 
 *   Edit the configuration
-    *   | | |
-        |-|-|
-        | `LABVIEW_EXECUTABLE` | Path to the LabVIEW executable |
-        | `LVCOMPARE_EXECUTABLE` | Path to the LvCompare executable |
-        | `LVMERGE_EXECUTABLE` | Path to the LvMerge executable |
-        | `CONFIG_DIRECTORY_LEVEL` | Level of directory from the project root to this configuration file.<br />0 if placed at the project root.|
-        | `PROJECT_ROOT_FORCED` | (Optional) Path to the project root<br/>If set to non-empty string, it overrides the auto-detection result from `CONFIGURATION_DIRECTORY_LEVEL` and the configuration source path<br />This option is needed only when the absolute path of the project root cannot be correctly determined.<br />For example, when working on a project in the shared folder of Windows-in-VirtualBox, git sometimes interprete the path as `//VBoxSvr` and cause the script to err, making manual specification nessisary. |
+    *   <table>
+        <tr><td><code>LABVIEW_EXECUTABLE</code></td><td>Path to the LabVIEW executable </td></tr>
+        <tr><td><code>LVCOMPARE_EXECUTABLE</code></td><td>Path to the LvCompare executable<br />
+                                                          For 32-bit version on Windows, it would be<br />
+                                                          <code>C:\Program Files (x86)\National Instruments\Shared\LabVIEW Compare\LVCompare.exe</code></td></tr>
+        <tr><td><code>LVMERGE_EXECUTABLE</code></td><td>Path to the LvMerge executable<br />
+                                                        For 32-bit version on Windows, it would be<br />
+                                                        <code>C:\Program Files\National Instruments\Shared\LabVIEW Merge\LVMerge.exe</code></td></tr>
+        <tr><td><code>CONFIG_DIRECTORY_LEVEL</code></td><td>Level of directory from the project root to this configuration file.<br />
+                                                            0 if placed at the project root.</td></tr>
+        <tr><td><code>PROJECT_ROOT_FORCED</code></td><td>(Optional) Path to the project root<br/>
+                                                         If set to non-empty string, it overrides the auto-detection result
+                                                         from <code>CONFIGURATION_DIRECTORY_LEVEL</code> and the configuration source path<br />
+                                                         This option is needed only when
+                                                         the absolute path of the project root cannot be correctly determined.<br />
+                                                         For example, when working on a project in the shared folder of Windows-in-VirtualBox,
+                                                         Git sometimes interprete the path as `//VBoxSvr` and cause the script to err,
+                                                         making manual specification nessisary.</td></tr>
+        </table>
 
 *   Inside the project, do
     ```console
