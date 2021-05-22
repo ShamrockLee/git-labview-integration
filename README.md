@@ -51,10 +51,17 @@ The configuration steps are the same in POSIX environments, plus the executable 
 
 ## Status
 
-*   The usage/featrues mentioned above have all been implemented, but not yet fully tested.
-    Since I haven't figured out the way to get a working setup of LabVIEW on Linux,
+*   The usage/featrues mentioned above have all been implemented.
+
+*   The Windows version has been tested with LabVIEW setup.
+
+*   Both are tested by specifying echo as `LVCOMPARE_EXECUTABLE` and `LVMERGE_EXECUTABLE`.
+
+*   Since I haven't figured out the way to get a working setup of LabVIEW on Linux,
     and I doesn't have a Mac machine,
-    some more POSIX part. Considering that the Windows part are more complex than the POSIX part
+    the POSIX part haven't been tested against real LabVIEW setup.
+
+*   Considering that the Windows part are more complex than the POSIX part
     due to the gap between Windows and BASH, it also requires more user experience to be improved.
 
 *   Suggestions, ideas and contributions are welcome!
