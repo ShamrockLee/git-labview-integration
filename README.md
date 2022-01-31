@@ -107,3 +107,11 @@ The configuration steps are the same in POSIX environments, plus the executable 
 *   Special thanks go to Jörg Herzinger, Joe Friedrichsen and contributers of the project [joerg/LabViewGitEnv](https://github.com/joerg/LabViewGitEnv).\
     The project also works on making LvCompare and LvMerge available Git.
     Their work enhanced my understanding to LvCompare, LvMerge, git-difftool and git-mergetool, and inspired me to make this one.
+
+## Copyright
+
+*   This work is authored by Yueh-Shun Li (a.k.a. Shamrock Lee) and is released under the MIT license. See `LICENSE` for detail.
+
+*   Git is a trademark held by the Git Project.
+
+*   LabVIEW is a trademark held by the National Instruments Corp..
