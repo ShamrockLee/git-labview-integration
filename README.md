@@ -1,12 +1,12 @@
-# git-labview-integration
+# Git LabVIEW Integration
 
-This repository provides BASH wrappers for local LvCompare and LvMerge executables to be used in both Windows and POSIX(-like) environments (Mac and Linux).
+This repository provides Bash wrappers for local LvCompare and LvMerge executables to be used in both Windows and POSIX(-like) environments (Mac and Linux).
 
 ## Usage
 
 It can serve as a template of a LabVIEW project using Git as its version control system, a submodule of another git repo, or be placed outside the project (e.g. in the home directory).
 
-To get start on Windows, work on Git BASH:
+To get start on Windows, work on Git Bash:
 
 *   Copy `git-labview-integration-posix/labview_path_windows.config.default` to your project and rename to `labview_path_windows.config`.
 
@@ -57,11 +57,11 @@ To get start on Windows, work on Git BASH:
      $ git mergetool -t lvmerge
      ```
      to resolve merge conflicts.
-     `-t` can be omitted if lvdiff and lvmerge is set to default.
+     `-t` can be omitted if `lvdiff` and `lvmerge` is set as the default `difftool` and `mergetool` respectively.
 
 The above configuration can also be done in cmd.exe or PowerShell, but the escaping might be different.
 
-The configuration steps are the same in POSIX environments, plus the executable path can be automatically detected by e.g. `"$(command -v LabVIEW)"` as long as those commands appear in the PATH.
+The configuration steps are the same in POSIX environments, plus the executable path can be automatically detected by e.g. `"$(command -v LabVIEW)"` as long as those commands appear in the `PATH` variable.
 
 ## Status
 
@@ -99,9 +99,11 @@ The configuration steps are the same in POSIX environments, plus the executable 
         https://lavag.org/topic/17934-configuring-git-to-work-with-lvcompare-and-lvmerge/
     *   LabVIEW and Git\
         https://forums.ni.com/t5/LabVIEW/LabVIEW-and-git/td-p/3369275?profile.language=en
+        
+
 
 ## Acknowledgements
 
-*   Great thanks goes to Jörg Herzinger, Joe Friedrichsen and contributers of the project [joerg/LabViewGitEnv](https://github.com/joerg/LabViewGitEnv).\
+*   Special thanks go to Jörg Herzinger, Joe Friedrichsen and contributers of the project [joerg/LabViewGitEnv](https://github.com/joerg/LabViewGitEnv).\
     The project also works on making LvCompare and LvMerge available Git.
     Their work enhanced my understanding to LvCompare, LvMerge, git-difftool and git-mergetool, and inspired me to make this one.
