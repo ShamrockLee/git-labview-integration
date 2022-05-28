@@ -22,7 +22,7 @@ To get start on Windows, work on Git Bash:
                                                           <code>C:\Program Files (x86)\National Instruments\Shared\LabVIEW Compare\LVCompare.exe</code></td></tr>
         <tr><td><code>LVMERGE_EXECUTABLE</code></td><td>Path to the LvMerge executable<br />
                                                         For 32-bit version on Windows, it would be<br />
-                                                        <code>C:\Program Files\National Instruments\Shared\LabVIEW Merge\LVMerge.exe</code></td></tr>
+                                                        <code>C:\Program Files (x86)\National Instruments\Shared\LabVIEW Merge\LVMerge.exe</code></td></tr>
         <tr><td><code>CONFIG_DIRECTORY_LEVEL</code></td><td>Level of directory from the project root to this configuration file.<br />
                                                             0 if placed at the project root.</td></tr>
         <tr><td><code>PROJECT_ROOT_FORCED</code></td><td>(Optional) Path to the project root<br/>
