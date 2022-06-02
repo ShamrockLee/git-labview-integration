@@ -3,18 +3,18 @@
 
 PROJECT_ROOT_FORCED=""
 
-if test -f "$CONFIGURATION_PATH_GIVEN" || test -l "$CONFIGURATION_PATH_GIVEN"; then
+if [[ -f "$CONFIGURATION_PATH_GIVEN" ]] || [[ -L "$CONFIGURATION_PATH_GIVEN" ]]; then
 	source "$CONFIGURATION_PATH_GIVEN"
 else
-	echo "Configuration file ($CONFIGURATION_PATH_GIVEN) not found"
+	echo "Configuration file ($CONFIGURATION_PATH_GIVEN) not found" >&2
 	exit 1
 fi
 
 PROJECT_ROOT_POSIX=""
-if test -z "$PROJECT_ROOT_FORCED"; then
+if [[ -z "$PROJECT_ROOT_FORCED" ]]; then
 	PROJECT_ROOT_POSIX="$(
 		cd "$(dirname "$CONFIGURATION_SOURCE")"
-		if test "${CONFIGURATION_DIRECTORY_LEVEL:-0}" -gt 0; then
+		if (( CONFIGURATION_DIRECTORY_LEVEL )); then
 			for i in {1.."$CONFIGURATION_DIRECTORY_LEVEL"}; do
 				cd ..
 			done

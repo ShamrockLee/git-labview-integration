@@ -1,16 +1,16 @@
-set -eu
+set -eu -o pipefail
 
 function absolutize_posix_path {
 	local ORIG="$1"
 	local PWD_GIVEN=""
-	if test "$#" -ge 2; then
+	if (( "$#" > 2 )); then
 		PWD_GIVEN="$2"
 	else
 		PWD_GIVEN="$PWD"
 	fi
-	if test -n "$(echo "$ORIG" | grep -e '^["'"'"']*/+')"; then
+	if [[ "${ORIG:0:1}" == "/" ]]; then
 		echo "$ORIG"
-	elif test -n "$(echo "$ORIG" | grep -e '^\s*["'"'"']*\.["'"'"']*\s*$')"; then
+	elif [[ "$ORIG" == "." ]]; then
 		echo "$PWD_GIVEN"
 	else
 		echo "$PWD_GIVEN/$ORIG"
