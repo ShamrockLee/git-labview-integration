@@ -38,8 +38,8 @@ To get start on Windows, work on Git Bash:
 
 *   Inside the project, do
     ```console
-    $ git config difftool.lvcompare.cmd "bash \"path/to/lvcompare_as_difftool.sh\" \"path/to/labview_path_windows.config\" \"\$LOCAL\" \"\$REMOTE\""
-    $ git config difftool.lvmerge.cmd "bash \"path/to/lvmerge_as_mergetool.sh\" \"path/to/labview_path_windows.config\" \"\$BASE\" \"\$LOCAL\" \"\$REMOTE\" \"\$MERGED\""
+    $ git config difftool.lvcompare.cmd "bash \"path/to/lvcompare_as_difftool.sh\" \"path/to/labview_path_windows.config\" \"\$REMOTE\" \"\$LOCAL\""
+    $ git config difftool.lvmerge.cmd "bash \"path/to/lvmerge_as_mergetool.sh\" \"path/to/labview_path_windows.config\" \"\$BASE\" \"\$REMOTE\" \"\$LOCAL\" \"\$MERGED\""
     ```
     *   `"path\\to\\blablabla"` is okay in Git BASH, but too much escape makes me dizzy.
     *   If you want `lvcompare` to be the default `difftool` and `lvmerge` the default `mergetool`, you can also do
@@ -99,7 +99,8 @@ The configuration steps are the same in POSIX environments, plus the executable 
         https://lavag.org/topic/17934-configuring-git-to-work-with-lvcompare-and-lvmerge/
     *   LabVIEW and Git\
         https://forums.ni.com/t5/LabVIEW/LabVIEW-and-git/td-p/3369275?profile.language=en
-        
+    *   Git and DiffTool problems : What do LOCAL and REMOTE point to?\
+        https://stackoverflow.com/questions/5440610/git-and-difftool-problems-what-do-local-and-remote-point-to
 
 
 ## Acknowledgements

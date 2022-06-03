@@ -14,8 +14,8 @@ echo "LOCAL: \"$3\"" >&2
 echo "MERGED: \"$5\"" >&2
 
 BASE_FIXED="$(fix_path_configured "$2")"
-REMOTE_FIXED="$(fix_path_configured "$4")"
-LOCAL_FIXED="$(fix_path_configured "$3")"
+REMOTE_FIXED="$(fix_path_configured "$3")"
+LOCAL_FIXED="$(fix_path_configured "$4")"
 MERGED_FIXED="$(fix_path_configured "$5")"
 
 echo "BASE_FIXED: \"$BASE_FIXED\"" >&2
