@@ -1,6 +1,6 @@
 set -eu
 
-function absolutize_headless_relative_posix_path {
+function absolutize_posix_path {
 	local ORIG="$1"
 	local PWD_GIVEN=""
 	if test "$#" -ge 2; then
@@ -20,5 +20,5 @@ function absolutize_headless_relative_posix_path {
 function fix_tool_input_path {
 	local PATH_TO_FIX="$1"
 	local PROJECT_ROOT_POSIX="$2"
-	absolutize_headless_relative_posix_path "$PATH_TO_FIX" "$PROJECT_ROOT_POSIX"
+	absolutize_posix_path "$PATH_TO_FIX" "$PROJECT_ROOT_POSIX"
 }

@@ -8,7 +8,7 @@ function posixize_windows_path {
         echo $1 | sed -r 's/^(["'"'"']*)([A-Za-z]):/\1\/\L\2/' | sed 's/\\/\//g'
 }
 
-function absolutize_headless_relative_windows_path {
+function absolutize_windows_path {
 	local ORIG="$1"
 	local PWD_GIVEN=""
 	if test "$#" -ge 2; then
@@ -26,5 +26,5 @@ function absolutize_headless_relative_windows_path {
 function fix_tool_input_path {
 	local PATH_TO_FIX="$1"
 	local PROJECT_ROOT_WINDOWS="${2}"
-	absolutize_headless_relative_windows_path "$(windowsize_posix_path "$PATH_TO_FIX")" "$PROJECT_ROOT_WINDOWS"
+	absolutize_windows_path "$(windowsize_posix_path "$PATH_TO_FIX")" "$PROJECT_ROOT_WINDOWS"
 }
