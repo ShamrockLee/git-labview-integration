@@ -7,7 +7,7 @@ LABVIEW_EXECUTABLE="$(command -v LabVIEW)"
 ## LVCompare executable absolute path
 LVCOMPARE_EXECUTABLE="$(command -v LVCompare)"
 
-## LvMerge executable absolute path
+## LVMerge executable absolute path
 LVMERGE_EXECUTABLE="$(command -v LVMerge)"
 
 ## The location of this script. DO NOT EDIT.
