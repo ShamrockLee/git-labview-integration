@@ -16,6 +16,8 @@
 
 *   Support Bash version 3, 4 and 5
 
+*   Make `README.md` more accessible with unordered lists instead of tables.
+
 ### Backward incompatibilities
 *   The order of `$REMOTE` and `$LOCAL` is now NOT reversed inside the program.
 
