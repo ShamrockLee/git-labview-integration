@@ -9,6 +9,8 @@
 *   Fix the `README.md` typo about the missing double-quote (`"`)
     in the `git config` setting, and the table about the default configuration on Windows.
 
+*   Stop excluding *.config files from the project tree.
+
 ### Enhancements
 *   Remove the `sed` and `grep` dependencies.
 
