@@ -1,6 +1,6 @@
 # Git LabVIEW Integration
 
-This repository provides Bash wrappers for local LvCompare and LvMerge executables to be used in both Windows and POSIX(-like) environments (Mac and Linux).
+This repository provides Bash wrappers for local LVCompare and LvMerge executables to be used in both Windows and POSIX(-like) environments (Mac and Linux).
 
 ## Usage
 
@@ -17,7 +17,7 @@ To get start on Windows, work on Git Bash:
 *   Edit the configuration
     *   <table>
         <tr><td><code>LABVIEW_EXECUTABLE</code></td><td>Path to the LabVIEW executable </td></tr>
-        <tr><td><code>LVCOMPARE_EXECUTABLE</code></td><td>Path to the LvCompare executable<br />
+        <tr><td><code>LVCOMPARE_EXECUTABLE</code></td><td>Path to the LVCompare executable<br />
                                                           For 32-bit version on Windows, it would be<br />
                                                           <code>C:\Program Files (x86)\National Instruments\Shared\LabVIEW Compare\LVCompare.exe</code></td></tr>
         <tr><td><code>LVMERGE_EXECUTABLE</code></td><td>Path to the LvMerge executable<br />
@@ -52,7 +52,7 @@ To get start on Windows, work on Git Bash:
      ```console
      $ git difftool -t lvconfig something another
      ```
-     to see the difference with LvCompare and
+     to see the difference with LVCompare and
      ```console
      $ git mergetool -t lvmerge
      ```
@@ -106,8 +106,8 @@ The configuration steps are the same in POSIX environments, plus the executable 
 ## Acknowledgements
 
 *   Special thanks go to Jörg Herzinger, Joe Friedrichsen and contributers of the project [joerg/LabViewGitEnv](https://github.com/joerg/LabViewGitEnv).\
-    The project also works on making LvCompare and LvMerge available Git.
-    Their work enhanced my understanding to LvCompare, LvMerge, git-difftool and git-mergetool, and inspired me to make this one.
+    The project also works on making LVCompare and LvMerge available Git.
+    Their work enhanced my understanding to LVCompare, LvMerge, git-difftool and git-mergetool, and inspired me to make this one.
 
 ## Copyright
 

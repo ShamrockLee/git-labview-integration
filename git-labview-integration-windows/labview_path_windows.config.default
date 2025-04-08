@@ -1,7 +1,7 @@
 ## LabVIEW executable absolute path
 LABVIEW_EXECUTABLE='C:\Program Files (x86)\National Instruments\LabVIEW 2020\LabVIEW.exe'
 
-## LvCompare executable absolute path
+## LVCompare executable absolute path
 LVCOMPARE_EXECUTABLE='C:\Program Files (x86)\National Instruments\Shared\LabVIEW Compare\LVCompare.exe'
 
 ## LvMerge executable absolute path

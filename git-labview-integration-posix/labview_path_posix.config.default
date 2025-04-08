@@ -4,7 +4,7 @@
 ## as well as programmatically defined
 LABVIEW_EXECUTABLE="$(command -v LabVIEW)"
 
-## LvCompare executable absolute path
+## LVCompare executable absolute path
 LVCOMPARE_EXECUTABLE="$(command -v LVCompare)"
 
 ## LvMerge executable absolute path
