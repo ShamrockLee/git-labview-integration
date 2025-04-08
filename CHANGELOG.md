@@ -11,6 +11,8 @@
 
 *   Stop excluding *.config files from the project tree.
 
+*   Fix and rename the LabVIEW mock tests.
+
 ### Enhancements
 *   Remove the `sed` and `grep` dependencies.
 
