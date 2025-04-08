@@ -34,6 +34,8 @@
 ### Release status
 *   v0.2.0-beta20220603: Passed the current test cases, but have not been tested on a real setup.
 
+*   v0.2.0-beta20250408: The mock tests worked.
+
 ## v0.1.0
 
 ### Highlights
